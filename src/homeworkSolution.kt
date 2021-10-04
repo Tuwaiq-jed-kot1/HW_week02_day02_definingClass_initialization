@@ -31,9 +31,9 @@ class Car(var carName: String, var carManafuctringYear: Int) {
 }
 
 fun main() {
-    val yaris = Car("Yaris", 2011, "White")
+    val audi = Car("Audi", 2015, "White")
     println("-------------------")
-    yaris.accelerate(0.0, 120.0, 7)
-    yaris.useBreack()
-    yaris.printCarInfo()
+    audi.accelerate(0.0, 120.0, 7)
+    audi.useBreack()
+    audi.printCarInfo()
 }

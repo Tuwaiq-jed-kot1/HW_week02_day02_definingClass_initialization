@@ -35,11 +35,12 @@ class Car (var name : String, var manuFacturingYear : Int){
             println("\n$name --> model : $manuFacturingYear ")
         }
     }
-    fun useBreak(){
-        println("$name used the break ")
-    }
     fun accelerate(){
         println("$name accelerate from 0 to 100 KM in 7s ")
     }
+    fun useBreak(){
+        println("$name used the break ")
+    }
+
 }
 

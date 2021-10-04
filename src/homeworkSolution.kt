@@ -1,13 +1,16 @@
 class car(var name: String, var manufacturingYear: Int) {
-    constructor(name: String, manufacturingYear: Int, color: String) : this(
-        name = name,
-        manufacturingYear = manufacturingYear
-    ) {
-
-    }
-
+    lateinit var color: String
     private var breake = false
     private var accelerator = false
+
+    constructor(name: String, manufacturingYear: Int, _color: String) : this(
+        name = name,
+        manufacturingYear = manufacturingYear
+
+    ) {
+        color = _color
+    }
+
 
     init {
         println(" Welcome $name !!")
@@ -23,6 +26,6 @@ class car(var name: String, var manufacturingYear: Int) {
 }
 
 fun main() {
-val tesla=car("Tesla",2021)
+    val tesla = car("Tesla", 2021)
 
 }

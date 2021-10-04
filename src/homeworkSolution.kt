@@ -6,33 +6,25 @@ class  Car(var name : String,var manufacturingYear:String){
 
     //the secondary constructor to ask for the name and manufacturing year and color
     constructor(_name: String, _manufacturingYear: String,_color:String) : this(name =_name,manufacturingYear=_manufacturingYear) {
-        // teacherDegree = tDegree
-        manufacturingYear=_manufacturingYear
+        // manufacturingYear=_manufacturingYear
+
+        color=_color
+
+
     }
 
 
-    /* constructor(tName: String, tDegree: String) : this(name = tName) {//المقصود هنا يشير الى البرايمري في الكونستركتر
-         teacherDegree = tDegree
+    //give the car ability to accelerateand the ability to use breake
+    fun ability(_ability: Boolean) {
 
-     }*/
+        if (_ability){
+            println(" the accelerateand is on")
 
+        }else {
+            println(" the brake is on")
 
-    /*   fun delCourse(coursesName: String) {
-           if (!::registeredCourses.isInitialized) {
-               println("you did not  register any course")
-
-           } else {
-               //contains  ابحث
-               if (registeredCourses.contains(coursesName)) {
-                   registeredCourses.remove(coursesName)
-               } else {
-                   println("you did not register  ")
-               }
-
-           }
-
-       }*/
-
+        }
+    }
 
     //رسالة ترحيبية
     init {
@@ -41,11 +33,12 @@ class  Car(var name : String,var manufacturingYear:String){
 
         println("Hi i,m init ,  i print this message when you creat new object :)")
 
+
+        color="blu"
         println("Name: $name")
 
-        this.name ="basil"
+        //this.name ="sonata"
 
-        println(name)
     }
 
 }
@@ -53,7 +46,8 @@ class  Car(var name : String,var manufacturingYear:String){
 fun main() {
     var car1:Car= Car("sonata","2020")
 
-    //println(car1.color)
+
+    car1.ability(true)
 
 
 
@@ -61,6 +55,9 @@ fun main() {
 
 
     var car2:Car= Car("camry","2018","red")
+
+
+    car2.ability(false)
 
 
 

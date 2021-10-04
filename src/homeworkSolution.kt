@@ -11,7 +11,6 @@ fun main() {
     Ford.accelerate()
     Ford.useBreak()
 
-
     val Toyota = Car("Camry", 2017)
     Toyota.Color()
     Toyota.accelerate()

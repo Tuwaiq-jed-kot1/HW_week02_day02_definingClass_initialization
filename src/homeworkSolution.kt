@@ -3,10 +3,9 @@ class Car(cName:String,manufacturingYear:Int) {
       private var cName:String ="bmw"
      var manufacturingYear:Int =2000
 
-    constructor (name: String, maYear: Int, color: String) : this() {
-        cName=name
-        manufacturingYear=maYear
-        var carColor = color
+    constructor (name: String, maYear: Int, color: String) : this(  cName=name
+        manufacturingYear=maYear) {
+       initlate var carColor = color
     }
     var carSpeed = 1
     var accelerate = 1
@@ -25,5 +24,5 @@ class Car(cName:String,manufacturingYear:Int) {
 fun main(){
     var welcome = Car("Toyota", 2007, "blue")
     println("Hello, welcome $welcome")
-    Car().accelerate()
+    Car.accelerate()
 }
